@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>การสร้างตาราง</h2>
+    <!--แท็กที่ใช้ในการสร้างตาราง
+    1.tag table ใช้สำหรับสร้างตาราง
+    2.tag thead ใช้กำหนดเนื้อหาหัวตาราง
+    3.tag body ใช้กำหนดเนื้อหาของตาราง
+    4.tag tfoot ใช้กำหนดเนื้อหาใต้ตาราง
+    5.tag tr ใช้กำหนด row
+    6.tag td ใช้กำหนด column
+    7.tag th กำหนด column ที่แสดงผลในส่วนหัวข้องตาราง-->
+
+    <!--การกำหนด Attribute ของตาราง-->
+    <!-- ใน tag table มีด้วยกัน 3 attribute
+    1.border="ความหน้าของเส้น" ซึ่งค่าเริ่มต้นเป็น 0
+    2.width="%" ความกว้างหน่วยเป็นเปอร์เซ็นต์
+    3.bgcolor="สี"สีพื้นหลัง ซึ่งสามารถใช้ได้ในแท็กของ tr td ด้วย
+    4.colspan="x" x คือจำนวน column ที่ต้องการนำมารวมกัน(td)
+    5.rowspan="x" x คือจำนวน row ที่ต้องการนำมารวมกัน(tr)
+    7.align="left,center,right" การจัดตำแหน่งของข้อมูลใน column(td)
+    8.Cellpadding พื้นที่การแสดงข้อมูลในตาราง
+    9.Cellspacing การกำหนดขนาดเส้นตาราง-->
+
+    <!--width ในแท็ก table คือเปอร์เซ็นความกว้างเทียบกับขนาดของ browser-->
+    <!--cellpadding คือการ pad ช่องว่างรอบช่องในตาราง-->
+    <!--cellspacing คือการ pad ช่องว่างของเส้นขอบในตาราง-->
+    <table border="1" width="80%" cellpadding="10" cellspacing="10">
+        <thead bgcolor="yellow">
+            <th>รหัสสินค้า</th>
+            <th>ภาพสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>ราคา</th>
+            <th>ดำเนินการ</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">01</td>
+                <td align="center"><img src="test pic.jpg" alt="" width="100px" height="100px"></td>
+                <td align="center">สินค้าที่ 1</td>
+                <td align="center">100</td>
+                <td align="center"><a href="#">สั่งซื้อ</a></td>
+            </tr>
+            <tr>
+                <td align="center">02</td>
+                <td align="center"><img src="test pic.jpg" alt="" width="100px" height="100px"></td>
+                <td align="center">สินค้าที่ 2</td>
+                <td align="center">120</td>
+                <td align="center"><a href="#">สั่งซื้อ</a></td>
+            </tr>
+            <tr>
+                <td align="center">03</td>
+                <td align="center"><img src="test pic.jpg" alt="" width="100px" height="100px"></td>
+                <td align="center">สินค้าที่ 3</td>
+                <td align="center">150</td>
+                <td align="center"><a href="#">สั่งซื้อ</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="right">ราคารวม</td>
+                <td colspan="2" align="center">500 บาท</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

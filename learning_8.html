@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+</head>
+<body>
+    <!-- HTML Form-->
+    <!-- html form คือการทำให้ผู้ใช้งานเว็ปสามารถป้อมข้อมูลเพื่อมาประมวลผลได้ โดยใช้แท็ก form-->
+    <!--แท็กหลักๆที่ใช้ในการทำฟอร์มมีดังนี้
+    1.tag input สำหรับรับข้อมูลแบบ single line
+    2.tag select สำหรับแสดงตัวเลือกแบบ drop-down
+    3.tag option สำหรับสร้างตัวเลือก
+    4.tag button สำหรับสร้างปุ่ม
+    5.tag label สำหรับกำหนดป้ายชื่อส่วนรับข้อมูล
+    6.tag textarea ช่องรับข้อความหลายบรรทัด-->
+    <h1 align="center">ฟอร์มลงทะเบียน</h1>
+    <!--
+        <form action=""></form>
+        action เอาไว้สำหรับการติดต่อสื่อสารกับ backend
+    -->
+    <form>
+        <div>
+            <label for="First name">ชื่อ</label>
+            <!-- attribute required คือห้ามช่องนี้เป็นช่องว่าง-->
+            <input type="text" name="fname" placeholder="ป้อนชื่อจริง(ภาษาไทย)" required>
+            <label for="Last name">นามสกุล</label>
+            <input type="text" name="lname" placeholder="ป้อนนามสกุล(ภาษาไทย)" required>
+        </div>
+        <br>
+        <div>
+            <label for="Email name">Email</label>
+            <input type="email" name="email">
+            <label for="Password">Password</label>
+            <input type="password" name="passowrd">
+        </div>
+        <br>
+        <div>
+            <label for="" >ที่อยู่</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="age">อายุ</label>
+            <!--attribute readonly คือบังคับให้แสดงข้อความได้อย่างเดียว-->
+            <input type="number" name="age" min="0" max="5" value="3" readonly>
+        </div>
+        <br>
+        <div>
+            <label for="birth date">วันเกิด</label>
+            <input type="date" name="birthdate">
+        </div>
+        <br>
+        <div>
+            <label for="range">ช่วงตัวเลข</label>
+            <!--range between 0 to 100-->
+            <input type="range" name="rangenumber">
+        </div>
+        <br>
+        <div>
+            <label for="education">ระดับการศึกษา</label>
+            <select name="edu" id="">
+                <option value="ป.ตรี">ป.ตรี</option>
+                <option value="ป.โท" selected>ป.โท</option>
+                <option value="ป.เอก">ป.เอก</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="sex">เพศ</label>
+            <input type="radio" name="gender">ชาย
+            <input type="radio" name="gender">หญิง
+        </div>
+        <br>
+        <div>
+            <label for="check box">สิ่งที่ชอบ</label>
+            <input type="checkbox" name="fav">ขนมจีบ
+            <input type="checkbox" name="fav">โจ๊ก
+            <input type="checkbox" name="fav">ข้าวต้ม
+            <input type="checkbox" name="fav">โรตี
+        </div>
+        <br>
+        <div>
+            <label for="intact file">แนบไฟล์</label>
+            <input type="file">
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="Submit">
+        </div>
+        <br>
+        <div>
+            <!--สามารถใช้แทน input type submit ได้-->
+            <button type="submit">Submit</button>
+        </div>
+        <br>
+        <div>
+            <!--ใช้ในการรีเซ็ทข้อมูลที่กรอกไปแล้ว-->
+            <input type="reset" name="Reset">
+        </div>
+    </form>
+
+</body>
+</html>
