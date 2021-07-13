@@ -1,0 +1,20 @@
+p#message{
+    font-style: italic;
+    color: brown;
+}
+/* หน่วยใน css */
+/* แบบคงที่(Absolute)
+1.px 1px เท่ากับ 0.75pt
+2.pt 1pt=1/72 inchs
+3.cm
+4.mm
+5.in
+6.pc 1pc=12pt
+*/
+/* แบบไม่คงที่(Relative) สำหรับทำ responsive web
+1.% กำหนดขนาดเป็นเปอร์เซ็น มักใช้กับความสูง
+2.em อ้างอิงขนาดกับ element parent ที่ใกล้สุด โดยจะเป็นจำนวนเท่าของค่านั้นๆ เช่น ถ้าตอนนี้ขนาดปัจจุบันคือ 20px แล้วกำหนด 2em ขนาดปัจจุบันจะเท่ากับ 20px
+3.rem กำหนดขนาดโดยอ้างอิงกับ root-element
+4.vw 1% ของ viewport width เช่น browser viewport เท่ากับ 500px แล้ว 1vw เท่ากับ 5px
+5.vh 1% ของ viewport high
+6.vmin, vmax การกำหนดค่าต่ำสุด สูงสุดของ viewport */

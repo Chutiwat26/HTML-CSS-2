@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--https://www.cssfontstack.com/-->
+    <!--การใช้ google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    <!--กำหนดค่าสี่โดยดูโค้ดได้ที่ color picker-->
+    <!--ใช้ border ในการกำหนดเส้นขอบ
+    border: <รูปแบบเส้น><ขนาด><สี>
+    รูปแบบเส้น ได้แก่ solid, dotted, dashed-->
+    <style>
+        body{
+            background-image: url("13-07-2021 13-53-20.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #title{
+            font-family: 'Times New Roman', Times, serif;
+            color: tomato;
+            font-size: 20px;
+            font-weight: 100;
+            text-decoration: underline;
+            text-align: center;
+        }
+        .FontSarabun{
+            font-family: 'Sarabun', sans-serif;
+            color: yellowgreen;
+            font-size: 30px;
+            font-weight: lighter;
+            text-align: justify;
+        }
+        div{
+            background-color: violet;
+            max-width: 50%;
+            max-height: 50%;
+            min-width: 10%;
+            min-height: 20%;
+            width: auto;
+            height: auto;
+        }
+        .box1{
+            background-color: red;
+            border: solid 10px blue;
+        }
+        .box2{
+            background-color: yellowgreen;
+            border: dotted 5px black;
+        }
+        .box3{
+            background-color: red;
+            border: dashed 5px blueviolet;
+        }
+        .box4{
+            background-color: chartreuse;
+            border-top-style: solid;
+            border-left-style: dashed;
+            border-right-style: dotted;
+            border-bottom-style: double;
+            border-radius: 10px;
+        }
+        .box5{
+            /* margin คือระยะช่องว่างภายนอกเส้นขอบ padding คือระยะภายในเส้นขอบ */
+            background-color: cornflowerblue;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .box6{
+            background-image: url("13-07-2021 13-53-20.png");
+        }
+    </style>
+</head>
+<body>
+    <!--การกำหนดชนิดของ font โดยใช้ font-family เช่น
+    font-family font1;
+    font-family font1,font2;
+    การกำหนด font family มากกว่า 1 font โปรแกรมจะเลือกใช้ font แรกก่อน ถ้าหาก browser ไม่รองรับ font แรกก็จะใช้ font ถัดไป-->
+    <h1 id="title">สวัสดี</h1>
+    <h1 class="FontSarabun">Font Sarabun ฟอนท์สารบัญ สวัสดี</h1>
+    <div>
+        <h1 class="box1">hello</h1>
+        <h2 class="box2">hello</h2>
+        <h3 class="box3">hello</h3>
+        <h1 class="box4">hello</h1>
+        <h1 class="box5">hello</h1>
+        <h1 class="box6">hello</h1>
+    </div>
+    <div>
+        <img src="13-07-2021 13-53-20.png" alt="Box model">
+    </div>
+</body>
+</html>
