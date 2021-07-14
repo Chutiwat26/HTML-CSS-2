@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*box-sizing : border-box คือการอ้างอิงขนาดโดยรวมค่า padding, margin เส้นขอบเข้าไปด้วย*/
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    color:blanchedalmond;
+    height: 100vh;
+    text-align: center;
+    padding-top: 12rem;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: burlywood;
+    color: crimson;
+    padding: 0.75rem 2rem;
+}
+/*Flexbox เบื้องต้น*/
+.container{
+    /*flex: ให้จัดวางในรูปแบบ flex*/
+    display: flex;
+    box-sizing: border-box;
+}

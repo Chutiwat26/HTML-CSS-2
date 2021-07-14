@@ -1,0 +1,31 @@
+/*CSS Grid Layout จัดการ layout แบบ 2 มิติ*/
+/*การใช้งาน
+display: grid;
+กำหนดขนาดแถว
+grid-template-rows
+กำหนดขนาดคอลัมน์
+grid-template-columns
+*/
+.grid-container{
+    display: grid;
+    /*ต้องการใช้มี 3 row*/
+    grid-template-rows: repeat(3, 20vh);
+    /*repeat คือทำซ้ำ x ขนาด n*/
+    grid-template-columns: repeat(3, auto);
+}
+.item{
+    padding: 3rem;
+    border: solid 2px black;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+.item:first-child{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item:last-child{
+    background-color: chartreuse;
+    grid-column: 2/4;
+}

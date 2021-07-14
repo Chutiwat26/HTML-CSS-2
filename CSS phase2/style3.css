@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    /*สามารถทิศทางของ flex ได้ด้วย flex direction(row, column, row-reverse, column-reverse)*/
+    background-color: brown;
+    flex-direction: row;
+    /*ใช้ flex-wrap เพื่อจัดการขนาดของ container เมื่อ item มีขนาดใหญ่กว่า container(nowrap, wrap,wrap-reverse)*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+    align-items: center;
+    height: 50vh;
+}
+.item{
+    background-color: orange;
+    border: solid 2px black;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    flex:1;
+}
+.item-2{
+    align-self: flex-start;
+}
+/*Flexbox เป็นการออกแบบ layout แค่ 1 มิติ*/
+/*Flex-properties สำหรับ item ใน container
+1.flex-shrink ควบคุมอัตราส่วนการหดตัว
+2.flex-grow ควบคุมอัตราการขยายตัว
+3.flex-basic ควบคุมความยืดหยุ่น
+4.flex:1 ทำให้ทุก item ที่อยู่ในแถวเดียวกันมีขนาดเท่ากันและทำให้อยู่ใน container ได้แบบเป๊ะๆ
+*/
+/*Flex justify สำหรับจัดวางตำแหน่งของ item 
+ใช้ attr ชื่อ justify-content โดยอ้างอิงแนวของ flex-direction
+1.flex-start ชิดด้านซ้าย
+2.center
+3.flex-end ชิดขวา
+4.space-around ระยะซ้ายขวาเท่ากัน
+5.space-between ระยะระหว่าง item เท่ากัน
+*/
+/*Flex Alignment 
+ใช้ attr : align-items สำหรับ item ทุกตัว และ align-self สำหรับ item ที่ต้องการ โดยอ้างอิงแนวแกนตรงข้ามของ flex-direction
+1.stretch กำหนดขนาด item เท่ากับ container
+2.flex-start ด้านบน
+3.center
+4.flex-end*/

@@ -1,0 +1,58 @@
+body{
+    background-color: cornsilk;
+    text-align: center;
+    padding: 100px;
+}
+h1{
+    display: none;
+}
+/*Smartphone*/
+@media only screen and (max-width:500px) {
+    body{
+        background-color: crimson;
+    }
+    #smartphone h1{
+        display: block;
+    }
+    
+}
+/*Tablets*/
+@media only screen and (min-width:501px) and (max-width:768px) {
+    body{
+        background-color: darkblue;
+        color: darkgray;
+    }
+    #tablets h1{
+        display: block;
+    }
+}
+/*Laptop desktop*/
+@media only screen and (min-width:769px) and (max-width:1200px) {
+    body{
+        background-color: rgb(0, 139, 23);
+        color: darkgray;
+    }
+    #normal h1{
+        display: block;
+    }
+}
+/*widescreen*/
+@media only screen and (min-width:1201px) {
+    body{
+        background-color: rgb(113, 139, 0);
+        color: darkgray;
+    }
+    #widescreen h1{
+        display: block;
+    }
+}
+/*landscape*/
+@media only screen and (max-height:500px) {
+    body{
+        background-color: rgb(15, 182, 233);
+        color: darkgray;
+    }
+    #landscape h1{
+        display: block;
+    }
+}
