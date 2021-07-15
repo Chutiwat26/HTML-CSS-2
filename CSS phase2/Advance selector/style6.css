@@ -1,0 +1,18 @@
+/*text-shadow(แกนx แกนy ความblur สี)*/
+/*
+h1{
+    text-shadow: 2px 2px 20px red;
+}*/
+/*การใช้ css variable*/
+:root{
+    --box:solid 10px red;
+}
+.box-1{
+    border:var(--box);
+}
+.box-2{
+    border: solid 1px black;
+}
+.box-3{
+    border: solid 1px black;
+}

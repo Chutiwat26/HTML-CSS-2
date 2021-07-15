@@ -1,0 +1,13 @@
+/*Descendant selector*//*
+P{
+    background-color: burlywood;
+}
+div p{
+    background-color: cadetblue;
+}*/
+
+/*child selector*/
+div>p{
+    /*tag p is child of tag div*/
+    background-color: coral;
+}

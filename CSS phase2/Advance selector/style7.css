@@ -1,0 +1,15 @@
+.box{
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    background-color: blanchedalmond;
+    margin: 100px;
+
+    /*ย้ายตำแหน่ง*/
+    /*transform: translate(200px,300px);*/
+    /*การหมุน*/
+    /*transform: rotatey(45deg);*/
+    /*scale(x-times,y-times)*/
+    /*transform: scale(2,3);*/
+    transform: skew(10deg);
+}

@@ -1,0 +1,11 @@
+a{
+    background-color: coral;
+}
+a[target]{
+    background-color: black;
+    color: blanchedalmond;
+}
+a[target="_blank"]{
+    background-color: blue;
+    color: crimson;
+}

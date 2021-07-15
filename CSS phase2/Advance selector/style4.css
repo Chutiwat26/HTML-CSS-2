@@ -1,0 +1,33 @@
+li{
+    padding: 0.25rem;
+    margin: 0.25rem;
+}
+/*
+li:first-child{
+    background-color: red;
+}
+li:last-child{
+    background-color: royalblue;
+}
+li:nth-child(3){
+    background-color: saddlebrown;
+}
+li:nth-child(5){
+    background-color: seagreen;
+}
+li:nth-last-child(3){
+    background-color: skyblue;
+}
+*/
+/*xn+z x คือทุกๆเท่าไร z คือเริ่มต้นที่ไหน*/
+/*li:nth-child(3n+8){
+    background-color: slateblue;
+}*/
+li:nth-child(odd){
+    background-color: black;
+    color: white;
+}
+li:nth-child(even){
+    background-color: white;
+    color: black;
+}
